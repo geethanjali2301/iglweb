@@ -20,9 +20,9 @@ const navItems = [
     name: "Library Solutions",
     path: "/library-solutions",
     dropdown: [
-      { name: "Digital Lending", path: "/library-solutions#digital-lending" },
-      { name: "Catalog Systems", path: "/library-solutions#catalog" },
-      { name: "Patron Services", path: "/library-solutions#patron" },
+      { name: "Boundless", path: "/library-solutions#digital-lending" },
+      { name: "Epopup", path: "/library-solutions#catalog" },
+      { name: "Content Services", path: "/library-solutions#patron" },
     ],
   },
 ];
