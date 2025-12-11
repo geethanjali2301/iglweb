@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Linkedin, Twitter } from "lucide-react";
+import logo from "../../assets/logo.png";
 
 const footerLinks = {
   solutions: [
@@ -26,13 +27,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">iG</span>
-              </div>
-              <span className="font-bold text-xl">
-                iGenie<span className="text-primary">Labs</span>
-              </span>
+            <Link to="/" className="flex items-center mb-6">
+              <img src={logo} alt="iGenie Labs" className="h-10 w-auto brightness-0 invert" />
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6">
               Enterprise digital technology company building secure, scalable platforms for content distribution, commerce, and data infrastructure.

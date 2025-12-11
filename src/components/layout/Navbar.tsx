@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
+import logo from "../../assets/logo.png";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -37,15 +38,9 @@ export function Navbar() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">iG</span>
-            </div>
-            <span className="font-bold text-xl text-foreground">
-              iGenie<span className="text-primary">Labs</span>
-            </span>
+          <Link to="/" className="flex items-center"> 
+          <img src={logo} alt="iGenie Labs" className="h-10 w-auto" />
           </Link>
-
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1">
             {navItems.map((item) =>
