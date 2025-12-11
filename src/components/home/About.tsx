@@ -55,9 +55,6 @@ export function About() {
 
           {/* Stats Card */}
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center mb-6">
-              <img src={logo} alt="iGenie Labs" className="h-10 w-auto brightness-0 invert" />
-            </Link>
 
               <p className="text-muted-foreground mb-12 text-lg">
                 Powering the future of digital content infrastructure with enterprise-grade technology
