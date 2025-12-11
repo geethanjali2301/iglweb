@@ -27,9 +27,6 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center mb-6">
-              <img src={logo} alt="iGenie Labs" className="h-10 w-auto brightness-0 invert" />
-            </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6">
               Enterprise digital technology company building secure, scalable platforms for content distribution, commerce, and data infrastructure.
             </p>

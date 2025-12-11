@@ -13,11 +13,6 @@ export function CTA() {
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Logo */}
-          <div className="flex items-center justify-center gap-3 mb-8">
-            <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">iG</span>
-            </div>
           </div>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
@@ -76,7 +71,6 @@ export function CTA() {
             <span className="text-primary-foreground/50 text-sm">For partnership inquiries</span>
           </a>
         </div>
-      </div>
     </section>
   );
 }

@@ -1,4 +1,6 @@
 import { CheckCircle } from "lucide-react";
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
 
 const whyUs = [
   "15+ years of deep expertise in content platforms & library systems",
@@ -52,17 +54,10 @@ export function About() {
           </div>
 
           {/* Stats Card */}
-          <div className="relative">
-            <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-3xl p-8 lg:p-12 border border-primary/10">
-              {/* Logo */}
-              <div className="flex items-center gap-3 mb-8">
-                <div className="w-14 h-14 rounded-xl gradient-primary flex items-center justify-center shadow-glow">
-                  <span className="text-primary-foreground font-bold text-2xl">iG</span>
-                </div>
-                <span className="font-bold text-2xl text-foreground">
-                  iGenie<span className="text-primary">Labs</span>
-                </span>
-              </div>
+          <div className="lg:col-span-1">
+            <Link to="/" className="flex items-center mb-6">
+              <img src={logo} alt="iGenie Labs" className="h-10 w-auto brightness-0 invert" />
+            </Link>
 
               <p className="text-muted-foreground mb-12 text-lg">
                 Powering the future of digital content infrastructure with enterprise-grade technology
@@ -80,7 +75,7 @@ export function About() {
                     </div>
                   </div>
                 ))}
-              </div>
+              
             </div>
 
             {/* Decorative elements */}
